@@ -1,6 +1,6 @@
 import os
 
-from llamafactory.webui.interface import create_ui
+from LLMfactory.webui.interface import create_ui
 
 
 def main():

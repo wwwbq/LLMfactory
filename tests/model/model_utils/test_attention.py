@@ -2,8 +2,8 @@ import os
 
 from transformers.utils import is_flash_attn_2_available, is_torch_sdpa_available
 
-from llamafactory.hparams import get_infer_args
-from llamafactory.model import load_model, load_tokenizer
+from LLMfactory.hparams import get_infer_args
+from LLMfactory.model import load_model, load_tokenizer
 
 
 TINY_LLAMA = os.environ.get("TINY_LLAMA", "llamafactory/tiny-random-Llama-3")

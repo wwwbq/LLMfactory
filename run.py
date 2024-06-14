@@ -5,13 +5,13 @@ import sys
 from enum import Enum, unique
 
 from src import entry
-from llamafactory.api.app import run_api
-from llamafactory.chat.chat_model import run_chat
-from llamafactory.eval.evaluator import run_eval
-from llamafactory.extras.env import VERSION, print_env
-from llamafactory.extras.logging import get_logger
-from llamafactory.extras.misc import get_device_count
-from llamafactory.trainer.tuner import export_model, run_exp
+from LLMfactory.api.app import run_api
+from LLMfactory.chat.chat_model import run_chat
+from LLMfactory.eval.evaluator import run_eval
+from LLMfactory.extras.env import VERSION, print_env
+from LLMfactory.extras.logging import get_logger
+from LLMfactory.extras.misc import get_device_count
+from LLMfactory.trainer.tuner import export_model, run_exp
 
 logger = get_logger(__name__)
 

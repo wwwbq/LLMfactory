@@ -4,9 +4,9 @@ import random
 import pytest
 from datasets import load_dataset
 
-from llamafactory.data import get_dataset
-from llamafactory.hparams import get_train_args
-from llamafactory.model import load_tokenizer
+from LLMfactory.data import get_dataset
+from LLMfactory.hparams import get_train_args
+from LLMfactory.model import load_tokenizer
 
 
 TINY_LLAMA = os.environ.get("TINY_LLAMA", "llamafactory/tiny-random-Llama-3")

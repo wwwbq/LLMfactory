@@ -2,8 +2,8 @@ import os
 
 import torch
 
-from llamafactory.hparams import get_train_args
-from llamafactory.model import load_model, load_tokenizer
+from LLMfactory.hparams import get_train_args
+from LLMfactory.model import load_model, load_tokenizer
 
 
 TINY_LLAMA = os.environ.get("TINY_LLAMA", "llamafactory/tiny-random-Llama-3")

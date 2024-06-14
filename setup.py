@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 
 def get_version():
-    with open(os.path.join("src", "llamafactory", "extras", "env.py"), "r", encoding="utf-8") as f:
+    with open(os.path.join("src", "LLMfactory", "extras", "env.py"), "r", encoding="utf-8") as f:
         file_content = f.read()
         pattern = r"{}\W*=\W*\"([^\"]+)\"".format("VERSION")
         (version,) = re.findall(pattern, file_content)
@@ -48,7 +48,7 @@ def main():
         #long_description_content_type="text/markdown",
         keywords=["LLaMA", "BLOOM", "Falcon", "LLM", "ChatGPT", "transformer", "pytorch", "deep learning"],
         license="Apache 2.0 License",
-        url="https://github.com/wwwbq/LLaMA-Factory",
+        url="https://github.com/wwwbq/LLMfactory",
         package_dir={"": "src"},
         packages=find_packages("src"),
         python_requires=">=3.8.0",

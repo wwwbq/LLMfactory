@@ -7,9 +7,9 @@ from collections import defaultdict
 import fire
 from tqdm import tqdm
 
-from llamafactory.data import get_dataset
-from llamafactory.hparams import get_train_args
-from llamafactory.model import load_tokenizer
+from LLMfactory.data import get_dataset
+from LLMfactory.hparams import get_train_args
+from LLMfactory.model import load_tokenizer
 
 
 def length_cdf(

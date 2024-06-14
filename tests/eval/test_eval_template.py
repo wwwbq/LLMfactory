@@ -1,4 +1,4 @@
-from llamafactory.eval.template import get_eval_template
+from LLMfactory.eval.template import get_eval_template
 
 
 def test_eval_template_en():
