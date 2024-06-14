@@ -1,0 +1,4 @@
+_base_: [a.yaml]
+
+lr: 0.1
+epoch: 4

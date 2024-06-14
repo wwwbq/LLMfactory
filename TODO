@@ -1,0 +1,14 @@
+llamafactory-cli train examples/lora_single_gpu/llama3_lora_sft.yaml
+python run.py train examples/lora_single_gpu/llama3_lora_sft.yaml
+
+git init
+
+git add .
+
+(git status)
+
+git commit -m "Initial commit"
+
+git remote add origin reop_url
+
+git push -u origin master
