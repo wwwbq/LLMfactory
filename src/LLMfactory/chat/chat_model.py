@@ -6,6 +6,8 @@ from ..extras.misc import torch_gc
 from ..hparams import get_infer_args
 from .hf_engine import HuggingfaceEngine
 from .vllm_engine import VllmEngine
+import os
+import cv2
 
 
 if TYPE_CHECKING:
@@ -112,6 +114,8 @@ def run_chat() -> None:
     print("Welcome to the CLI application, use `clear` to remove the history, use `exit` to exit the application.")
 
     while True:
+        img = input("\ninput_img: ")
+        img = cv2.imread(img) if os.path.exists(img) else None
         try:
             query = input("\nUser: ")
         except UnicodeDecodeError:
@@ -133,7 +137,7 @@ def run_chat() -> None:
         print("Assistant: ", end="", flush=True)
 
         response = ""
-        for new_text in chat_model.stream_chat(messages):
+        for new_text in chat_model.stream_chat(messages, image=img):
             print(new_text, end="", flush=True)
             response += new_text
         print()
